@@ -11,6 +11,5 @@ describe('Los estudiantes login', function() {
       cy.get('.cajaSignUp').find('[name="idPrograma"]').select('20')
       cy.get('.cajaSignUp').find('input[name="acepta"]').check()
       cy.get('.cajaSignUp').contains('Registrarse').click()
-      cy.contains('Ocurrió un error activando tu cuenta')
     })
 })
